@@ -3,10 +3,8 @@
 #include <stdio.h>
 
 /**
- * main - no input and must return int
- *
- * N will be a random number and the last digit (n % 10)
- * will determine if its 0, greater than 5, or else, less than 6 and not 0
+ * main - Prints last digit from n and will determine if its 0, greater than 5, or else, less than 6 and not 0
+ * 
  * Return: always 0
  */
 
