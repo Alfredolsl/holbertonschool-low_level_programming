@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - no input, must return zero
+ * main - prints alphabet backwards
  *
  * Return: always 0
  */
