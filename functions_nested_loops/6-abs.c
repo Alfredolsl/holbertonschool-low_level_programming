@@ -2,7 +2,7 @@
 
 /**
  *_abs - Returns absolute value of an integer
- *@int: int to check
+ *@n: int to check
  *Return: Absolute int
  */
 
