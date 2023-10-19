@@ -1,1 +1,1 @@
-This directory will be used for C programs relating to functions and nested loops.
+This directory is for C programs about Functions and Nested loops.
