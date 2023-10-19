@@ -11,9 +11,9 @@ void print_alphabet_x10(void)
 
 	while (i <= 9)
 	{
-		char c;
+		char c = 'a';
 
-		while (c = 'a' <= 'z')
+		while (c <= 'z')
 		{
 			_putchar(c);
 			c++;
