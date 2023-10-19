@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- *main - Prints alphabet using for loop with _puthcar and a newline
- *Return: Always 0
+ * print_alphabet - Function that prints the alphabet, doesn't return anything
+ * Return: Always 0
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	char c;
+	char c = 'a';
 
-	while (c = 'a' <= 'z')
+	while (c <= 'z')
 	{
 		_putchar(c);
 		c++;
 	}
-	return (0);
+	_putchar('\n');
 }
