@@ -1,7 +1,7 @@
 # include <stdio.h>
 
 /**
- * main - no input and must return int
+ * main - Prints alphabet with for loop
  *
  * Return: always 0
  */
