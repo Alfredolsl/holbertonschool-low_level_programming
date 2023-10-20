@@ -19,7 +19,7 @@ void print_times_table(int n)
 			{
 				k = i * j;
 
-				if (i == 0)
+				if (k == 0 && j == 0)
 				{
 					printf("%d", k);
 				}
