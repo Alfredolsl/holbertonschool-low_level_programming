@@ -27,7 +27,7 @@ void print_times_table(int n)
 				else
 					printf(",  ");
 			}
-			_putchar('\n');
 		}
+			_putchar('\n');
 	}
 }
