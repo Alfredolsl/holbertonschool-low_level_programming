@@ -26,7 +26,7 @@ void print_times_table(int n)
 						printf("\n");
 				}
 				}
-				else if (k >= 100 && j != n)
+				else if (k >= 100)
 				{
 					printf(", ");
 					printf("%d", k);
@@ -34,16 +34,15 @@ void print_times_table(int n)
 						printf("\n");
 				}
 				}
-				else if ((k > 10 && k <= 99) && j != n)
+				else if (k > 10 && k <= 99)
 				{
 					printf(",  ");
 					printf("%d", k);
-					printf(",  ");
 					if (j == n)
 						printf("\n");
 				}
 				}
-				else if (k < 9 && j != n)
+				else
 				{
 					printf(",   ");
 					printf("%d", k);
