@@ -24,7 +24,7 @@ void print_times_table(int n)
 				if (k / n != n)
 					_putchar(',');
 				else
-					continue
+					continue;
 
 				if (k <= 9)
 					printf("   ");
