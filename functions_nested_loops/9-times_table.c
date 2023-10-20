@@ -15,7 +15,13 @@ void time_table(void)
 		int j = 0;
 
 		for (j; j <= 9; j++)
+		{
 			_putchar(i * j + '0');
+			_putchar(',');
+			_putchar(' ');
+			_putchar(' ');
+		}
+		_putchar('\n');
 		i++;
 	}
 }
