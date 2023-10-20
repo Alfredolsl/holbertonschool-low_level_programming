@@ -30,7 +30,7 @@ void print_times_table(int n)
 					printf("%d", k);
 					printf(",  ");
 				}
-				else if (k <= 8 && j != n)
+				else if (k < 10 && j != n)
 				{
 					printf("%d", k);
 					printf(",   ");
