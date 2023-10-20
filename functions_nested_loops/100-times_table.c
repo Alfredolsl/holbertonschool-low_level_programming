@@ -39,8 +39,8 @@ void print_times_table(int n)
 				{
 					printf("%d", k);
 				}
+				_putchar('\n');
 			}
-			_putchar('\n');
 		}
 	}
 }
