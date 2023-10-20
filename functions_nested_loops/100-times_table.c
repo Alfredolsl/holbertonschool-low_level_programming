@@ -31,8 +31,8 @@ void print_times_table(int n)
 					else if (k >= 100)
 						printf("%d, ", k);
 				}
-				_putchar('\n');
 			}
+			_putchar('\n');
 		}
 	}
 }
