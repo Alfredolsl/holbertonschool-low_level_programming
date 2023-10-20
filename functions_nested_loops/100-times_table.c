@@ -25,7 +25,7 @@ void print_times_table(int n)
 					printf(",  ");
 				else
 				{
-					if (y !=0)
+					if (j !=0)
 						printf(",   ");
 				}
 				_putchar(k + '0');
