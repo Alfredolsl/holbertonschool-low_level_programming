@@ -39,7 +39,7 @@ void print_times_table(int n)
 					if (j == n)
 						printf("\n");
 				}
-				else if (k < 9)
+				else if (k <= 9)
 				{
 					printf(",   ");
 					printf("%d", k);
