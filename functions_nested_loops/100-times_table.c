@@ -19,18 +19,14 @@ void print_times_table(int n)
 			{
 				k = i * j;
 
-				_putchar(k  + '0');
-				if (j != n)
-					_putchar(',');
+				printf("%d", k);
 
-				if (k >= 100)
-					printf(" ");
-				else if (k >= 10 && k <= 99)
-					printf("  ");
-				else
-				{
-					printf("   ");
-				}
+				if (k >= 100 && j != n)
+					printf(", ");
+				else if ((k >= 10 && k <= 99) && j != n)
+					printf(",  ");
+				else if (k <= 9 && j != n)
+					printf(",   ");
 			}
 			_putchar('\n');
 		}
