@@ -21,15 +21,6 @@ void print_times_table(int n)
 			{
 				k = i * j;
 				printf("%d", k);
-				if (j != n)
-				{
-					if (k <= 9)
-						printf(",   ");
-					else
-						printf(",  ");
-				}
-				else
-					_putchar('\n');
 			}
 		}
 	}
