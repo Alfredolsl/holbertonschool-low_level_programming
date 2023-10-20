@@ -22,14 +22,13 @@ void print_times_table(int n)
 				k = i * j;
 				printf("%d", k);
 
-				if(k <= 9 && n != i)
+				if (k <= 9)
 					printf(",   ");
-				else if (k >= 10 && n != i)
+				else if (k >= 10)
 					printf(",  ");
-				else if (k == 0 && n != i)
+				else if (k == 0)
 					printf(" ");
 			}
 		}
-		_putchar('\n');
 	}
 }
