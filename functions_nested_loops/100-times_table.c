@@ -32,14 +32,14 @@ void print_times_table(int n)
 					if (j == n)
 						printf("\n");
 				}
-				else if (k > 10 && k <= 99)
+				else if (k > 9 && k <= 99)
 				{
 					printf(",  ");
 					printf("%d", k);
 					if (j == n)
 						printf("\n");
 				}
-				else
+				else if (k < 9)
 				{
 					printf(",   ");
 					printf("%d", k);
