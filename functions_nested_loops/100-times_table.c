@@ -29,7 +29,7 @@ void print_times_table(int n)
 				else if (k == 0 && n != i)
 					printf(" ");
 			}
-			_putchar('\n');
 		}
+		_putchar('\n');
 	}
 }
