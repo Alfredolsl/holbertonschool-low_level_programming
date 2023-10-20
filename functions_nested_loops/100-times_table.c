@@ -25,14 +25,14 @@ void print_times_table(int n)
 				if (j <= i)
 				{
 					if (k <= 9)
-						printf("%d,   ", k);
+						printf(",   ", k);
 					else if  (k >= 10)
-						printf("%d,  ", k);
+						printf(",  ", k);
 					else if (k >= 100)
-						printf("%d, ", k);
+						printf(", ", k);
 				}
 			}
 		}
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
