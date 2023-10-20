@@ -38,9 +38,9 @@ void print_times_table(int n)
 				else
 				{
 					printf("%d", k);
+					_putchar('\n');
 				}
 			}
 		}
-		_putchar('\n');
 	}
 }
