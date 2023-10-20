@@ -22,18 +22,18 @@ void print_times_table(int n)
 
 				if (k >= 100 && j != n)
 				{
-					printf("%d", k);
 					printf(", ");
+					printf("%d", k);
 				}
 				else if ((k >= 9 && k <= 99) && j != n)
 				{
-					printf("%d", k);
 					printf(",  ");
+					printf("%d", k);
 				}
 				else if (k < 9 && j != n)
 				{
-					printf("%d", k);
 					printf(",   ");
+					printf("%d", k);
 				}
 				else
 				{
