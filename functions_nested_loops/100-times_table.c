@@ -35,7 +35,7 @@ void print_times_table(int n)
 					printf("%d", k);
 					printf(",   ");
 				}
-				else
+				else if (j == n)
 				{
 					printf("%d", k);
 					_putchar('\n');
