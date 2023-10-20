@@ -22,7 +22,7 @@ void print_times_table(int n)
 				k = i * j;
 				printf("%d", k);
 
-				if (j <= i)
+				if (k / n != n)
 				{
 					if (k <= 9)
 						printf(",   ");
