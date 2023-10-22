@@ -20,6 +20,7 @@ void print_number(int n)
 
 	while (i % 10 != 0)
 	{
+		i = i % 10
 		print_number(i + '0');
 	}
 
