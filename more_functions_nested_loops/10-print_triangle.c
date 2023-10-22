@@ -12,9 +12,9 @@ void print_triangle(int size)
 	{
 		int i;
 
-		for (i = size; i != 0; i--)
+		for (i = size + 1; i != 0; i--)
 		{
-			int j = 1;
+			int j = 0;
 
 			while (j != size)
 			{
