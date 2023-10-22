@@ -9,16 +9,28 @@
 int main(void)
 {
 	long int n;
-	int maxPrimeN;
+	int maxPrime, oddPrime;
 
 	n = 612852475143;
+	maxPrime = 0;
+	oddPrime = 3;
 
-	while (n % 2 == 1)
+	while (n % 2 == 0)
 	{
-		maxPrimeN = 2;
+		maxPrime = 2;
 		n /= 2;
 	}
 
-	printf("%ld\n", n);
+	while (n != 1)
+	{
+		while (n % oddPrime == 0)
+		{
+			maxPrime = oddPrime;
+			n /= oddPrime;
+		}
+		oddPrime += 2;
+	}
+
+	printf("%d\n", maxPrime);
 	return (0);
 }
