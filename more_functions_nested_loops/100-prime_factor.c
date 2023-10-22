@@ -20,6 +20,6 @@ int main(void)
 		n /= 2;
 	}
 
-	printf("%d\n", n);
+	printf("%ld\n", n);
 	return (0);
 }
