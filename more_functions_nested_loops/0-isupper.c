@@ -8,8 +8,10 @@
 
 int _isupper(int c)
 {
-	if (c == "ABCDEFGHJIKLMNOPQRSTUVWXYZ")
-		return (1);
-	else
-		return (0);
+	char letter;
+
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		if (c == letter)
+			return (1);
+	return(0);
 }
