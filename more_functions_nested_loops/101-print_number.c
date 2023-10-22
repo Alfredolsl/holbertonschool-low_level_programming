@@ -18,9 +18,8 @@ void print_number(int n)
 	else
 		i = n;
 
-	while (i / 10)
+	while (i % 10 != 0)
 	{
-		i /= 10;
 		print_number(i + '0');
 	}
 
