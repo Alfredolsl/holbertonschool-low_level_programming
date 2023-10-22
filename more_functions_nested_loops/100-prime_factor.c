@@ -8,17 +8,18 @@
 
 int main(void)
 {
-	long int n = 612852475143;
-	int i = 2;
-	int j;
+	long int n;
+	int i;
+	int maxPrimeN;
 
-	float div (scanf(n) / i);
+	n = 612852475143;
 
-	while (div != 1)
+	while (n % 2 == 0)
 	{
-		if (isdigit(div) == 1)
-			j = div;
+		i = 2;
+		n /= 2;
 	}
-	printf("%d\n", j);
+
+	printf("%d\n", n);
 	return (0);
 }
