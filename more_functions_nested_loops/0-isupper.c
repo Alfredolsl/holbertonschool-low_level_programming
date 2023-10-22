@@ -8,7 +8,7 @@
 
 int _isupper(int c)
 {
-	if (c == 'C')
+	if (c == "ABCDEFGHJIKLMNOPQRSTUVWXYZ")
 		return (1);
 	else
 		return (0);
