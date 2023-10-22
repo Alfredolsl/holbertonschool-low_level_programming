@@ -6,7 +6,7 @@
  *Return: void
  */
 
-void main(void)
+int main(void)
 {
 	int n = 612852475143;
 	int i = 2;
@@ -19,4 +19,5 @@ void main(void)
 			n = div;
 	}
 	printf("%d\n", n);
+	return (0);
 }
