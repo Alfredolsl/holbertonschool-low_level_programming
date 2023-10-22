@@ -10,14 +10,15 @@ int main(void)
 {
 	long int n = 612852475143;
 	int i = 2;
+	int j;
 
-	int div (n / i);
+	float div (n / i);
 
 	while (div != 1)
 	{
 		if (isdigit(div) == 1)
-			n = div;
+			j = div;
 	}
-	printf("%d\n", n);
+	printf("%d\n", j);
 	return (0);
 }
