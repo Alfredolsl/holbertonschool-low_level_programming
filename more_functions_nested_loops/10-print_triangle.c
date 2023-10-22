@@ -16,15 +16,17 @@ void print_triangle(int size)
 		{
 			int j = 0;
 
-			while (j != i)
+			while (j != size)
 			{
 				if (j < i)
 					_putchar(' ');
-				else if (j > i)
+				else if (j == i)
 					_putchar('#');
 				j++;
 			}
 			_putchar('\n');
 		}
 	}
+	else
+		_putchar('\n');
 }
