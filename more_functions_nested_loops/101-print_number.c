@@ -24,6 +24,6 @@ void print_number(int n)
 		_putchar(i + '0');
 	}
 
-	_putchar(n % 10 + '0');
+	_putchar(i % 10 + '0');
 	_putchar('\n');
 }
