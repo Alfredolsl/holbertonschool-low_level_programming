@@ -4,5 +4,5 @@ OBJ = main.o school.o
 NAME = school
 
 all: $(SRC) $(OBJ)
-	gcc -c $(SRC) -o $(OBJ)
-	gcc $(OBJ) -o school
+	$(CC) -c $(SRC) -o $(OBJ)
+	$(CC) $(OBJ) -o school
