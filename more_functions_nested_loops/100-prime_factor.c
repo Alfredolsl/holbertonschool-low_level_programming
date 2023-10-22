@@ -12,9 +12,8 @@ int main(void)
 	int maxPrimeN;
 
 	n = 612852475143;
-	maxPrimeN = 0;
 
-	while (n % 2 == 0)
+	while (n % 2 == 1)
 	{
 		maxPrimeN = 2;
 		n /= 2;
