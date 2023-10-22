@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 #include "main.h"
-=======
-#insert "main.h"
->>>>>>> 598ecd90d58a1b79dcd073b6b65c21d3a286ebc4
 
 /**
  *print_numbers - prints numbers from 0 to 9
