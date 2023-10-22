@@ -8,7 +8,7 @@
 
 int _isupper(int c)
 {
-	c = _putchar(c + 'A');
+	c = _putchar(c + 'a');
 
 	if (c == 'C')
 		return (1);
