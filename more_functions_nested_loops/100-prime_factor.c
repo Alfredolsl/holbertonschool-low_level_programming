@@ -12,7 +12,7 @@ int main(void)
 	int i = 2;
 	int j;
 
-	float div (n / i);
+	float div (scanf(n) / i);
 
 	while (div != 1)
 	{
