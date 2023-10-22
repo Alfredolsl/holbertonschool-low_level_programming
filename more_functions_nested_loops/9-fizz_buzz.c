@@ -7,7 +7,7 @@
  * Return: void
  */
 
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -22,4 +22,5 @@ void main(void)
 		else
 			printf("%d ", i);
 	}
+	return (0);
 }
