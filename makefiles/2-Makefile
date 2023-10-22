@@ -3,6 +3,6 @@ SRC = main.c school.c
 OBJ = $(patsubst .c,.o)
 NAME = school
 
-all: $(OBJ)
+all: $(OBJ) $(NAME)
 	$(CC) -c $(SRC) -o $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
