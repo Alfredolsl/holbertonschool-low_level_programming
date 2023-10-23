@@ -13,7 +13,7 @@ int main(void)
 	i = 1;
 	j = 2;
 
-	for (k = 0; k <= 50; ++k)
+	for (k = 1; k <= 50; ++k)
 	{
 		if (k != 20365011074)
 			printf("%ld, ", i);
