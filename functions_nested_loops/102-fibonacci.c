@@ -18,7 +18,7 @@ int main(void)
 		if (k <= 49)
 			printf("%ld, ", i);
 		else
-			printf("%ld\n", i)
+			printf("%ld\n", i);
 		f = i + j;
 		i = j;
 		j = f;
