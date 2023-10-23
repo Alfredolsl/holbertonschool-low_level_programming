@@ -8,13 +8,18 @@
 
 int main(void)
 {
-	int f;
-	int j = 0;
+	long int i, j, k, f;
 
-	for (f = 1; f != 50; f++)
+	i = 1;
+	j = 2;
+
+	for (k = 1; k <= 50; k++)
 	{
-		j += f;
-		printf("%d, ", j);
+		f = i + j;
+		i = j;
+		j = f;
+		if (k != 50)
+			printf("%ld, ", j);
 	}
 	putchar('\n');
 	return (0);
