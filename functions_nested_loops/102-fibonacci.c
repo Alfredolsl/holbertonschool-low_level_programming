@@ -19,7 +19,7 @@ int main(void)
 		i = j;
 		j = f;
 		if (k < 49)
-			printf("%ld, ", j);
+			printf("%ld, ", f);
 	}
 	putchar('\n');
 	return (0);
