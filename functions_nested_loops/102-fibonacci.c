@@ -15,7 +15,7 @@ int main(void)
 
 	for (k = 0; k <= 50; ++k)
 	{
-		if (k < 49)
+		if (k <= 50)
 			printf("%ld, ", i);
 		f = i + j;
 		i = j;
