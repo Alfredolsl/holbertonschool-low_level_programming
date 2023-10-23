@@ -18,7 +18,7 @@ int main(void)
 		f = i + j;
 		i = j;
 		j = f;
-		if (k != 50)
+		if (k < 50)
 			printf("%ld, ", j);
 	}
 	putchar('\n');
