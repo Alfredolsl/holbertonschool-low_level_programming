@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- *main computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line.
- *
+ * main - computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded),
+ * followed by a new line
  *Return: always 0
  */
 
@@ -18,6 +18,6 @@ int main(void)
 		else if (n % 5 == 0)
 			multiples += n;
 	}
-	printf("%d", multiples);
+	printf("%d\n", multiples);
 	return (0);
 }
