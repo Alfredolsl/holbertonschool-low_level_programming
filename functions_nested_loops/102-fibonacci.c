@@ -13,7 +13,7 @@ int main(void)
 
 	for (f = 1; f != 50; f++)
 	{
-		j += f
+		j += f;
 		printf("%d, ", j);
 	}
 	putchar('\n');
