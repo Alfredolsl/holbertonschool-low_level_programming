@@ -15,10 +15,10 @@ int main(void)
 
 	for (k = 0; k <= 50; ++k)
 	{
-		if (k <= 49)
+		if (k < 49)
 			printf("%ld, ", i);
 		else
-			printf("%ld\n", i);
+			printf("%ld\n", i)i;
 		f = i + j;
 		i = j;
 		j = f;
