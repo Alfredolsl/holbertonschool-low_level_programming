@@ -15,11 +15,11 @@ int main(void)
 
 	for (k = 1; k <= 49; k++)
 	{
+		if (k < 49)
+			printf("%ld, ", i);
 		f = i + j;
 		i = j;
 		j = f;
-		if (k < 49)
-			printf("%ld, ", f);
 	}
 	putchar('\n');
 	return (0);
