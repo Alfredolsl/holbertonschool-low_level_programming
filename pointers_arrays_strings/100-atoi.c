@@ -23,12 +23,13 @@ int _atoi(char *s)
 	while (s[i] != '\0' && f == 0)
 	{
 		if (s[i] == '-')
-			sign = -1;
-		else if (s[i] == '+')
-			sign = 1;
+			++sign;
 
 		if (s[i] >= '0' && s[i] <= '9')
 		{
+			if (sign % 2)
+				digit = -digit;
+
 			digit = s[i] - '0';
 			n = n * 10 + digit;
 			f = 1;
