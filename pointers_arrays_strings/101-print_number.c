@@ -17,7 +17,7 @@ void print_number(int n)
 	else
 		i = n;
 
-	while (i != 0)
+	if (i / 10)
 	{
 		print_number(i / 10);
 	}
