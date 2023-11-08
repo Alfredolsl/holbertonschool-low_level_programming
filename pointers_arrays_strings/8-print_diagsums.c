@@ -18,7 +18,7 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < size; i++)
 	{
 		ldiag += a[(i * size) + i];
-		rdiag += a[((i * size) + i) - (i + 1)];
+		rdiag += a[(size * (i + 1)) - (i + 1)];
 	}
 	printf("%d, %d\n", ldiag, rdiag);
 }
