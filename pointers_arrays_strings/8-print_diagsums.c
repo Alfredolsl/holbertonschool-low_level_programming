@@ -8,7 +8,7 @@
  * @size: size of matrix
  */
 
-void print_diagsums(int *a, int size)
+void print_diagsums((int *)a, int size)
 {
 	int i, j, ldiag, rdiag;
 
@@ -21,11 +21,11 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 			{
-				ldiag += a[i][j];
-				rdiag += a[i][j - 1];
+				ldiag += a[size * j + 1];
+				rdiag += a[(size * (j + 1)) - 1];
 			}
 		}
 	}
 	printf("Sum of left diagonal: %d\n", ldiag);
-	printf("Sum of left diagonal: %d\n", rdiag);
+	printf("Sum of right diagonal: %d\n", rdiag);
 }
