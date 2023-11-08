@@ -17,8 +17,8 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		ldiag += a[*(a + size) + 1];
-		rdiag += a[*(a + size) - (i + 1)];
+		ldiag += a[*(i * size) + i];
+		rdiag += a[*(i * size) - (i + 1)];
 	}
 	printf("Sum of left diagonal: %d\n", ldiag);
 	printf("Sum of right diagonal: %d\n", rdiag);
