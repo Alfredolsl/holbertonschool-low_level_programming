@@ -11,7 +11,7 @@ void print_diagsums(int *a, int size)
 {
 	int i, j, sum, diagonal;
 
-	sum, diagonal = 0;
+	sum, diagonal = 0, 0;
 
 	for (i = 0; i < size; i++)
 	{
