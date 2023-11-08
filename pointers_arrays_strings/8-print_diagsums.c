@@ -8,7 +8,7 @@
  * @size: size of matrix
  */
 
-void print_diagsums((int *)a, int size)
+void print_diagsums(int *a, int size)
 {
 	int i, j, ldiag, rdiag;
 
