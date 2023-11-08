@@ -21,8 +21,8 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 			{
-				ldiag += a[size * j + 1];
-				rdiag += a[(size * (j + 1)) - 1];
+				ldiag += a[(j * a + i) * size];
+				rdiag += a[((j * a + i) * size) - 1];
 			}
 		}
 	}
