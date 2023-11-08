@@ -20,4 +20,6 @@ char *cap_string(char *s);
 char *leet(char *s);
 char *rot13(char *s);
 void print_number(int n);
+/* Even more pointers, arrays, etc */
 char *_memset(char *s, char b, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n);
