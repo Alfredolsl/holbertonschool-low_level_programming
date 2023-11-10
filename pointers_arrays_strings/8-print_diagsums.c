@@ -10,16 +10,24 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, ldiag, rdiag;
+	int i, j, ldiag, rdiag;
 
 	ldiag = 0;
 	rdiag = 0;
 
 	for (i = 0; i < size; i++)
 	{
-				ldiag += a[i];
-				rdiag += a[i];
-				a -= size;
+		a += size;
 	}
+
+	a -= size;
+	
+	for (i = 0; i < size; i++)
+	{
+		ldiag += a[i];
+		rdiag += a[i];
+		a -= size;
+	}
+
 	printf("%d, %d\n", ldiag, rdiag);
 }
