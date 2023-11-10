@@ -10,15 +10,19 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, ldiag, rdiag;
+	int i, j, ldiag, rdiag;
 
+	j = 0;
 	ldiag = 0;
 	rdiag = 0;
 
 	for (i = 0; i < size; i++)
 	{
-		ldiag += a[(i * size) + i];
-		rdiag += a[(size * (i + 1)) - (i + 1)];
+		if (i == j)
+		{
+			ldiag += (*a * size) + i;
+			rdiag += (*a * size) - (i + 1);
+		}
 	}
 	printf("%d, %d\n", ldiag, rdiag);
 }
