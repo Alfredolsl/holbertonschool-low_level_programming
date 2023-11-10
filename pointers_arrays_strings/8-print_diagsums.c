@@ -22,7 +22,7 @@ void print_diagsums(int *a, int size)
 			if (i == j)
 			{
 				ldiag += a[i];
-				rdiag += a[-(1 + i)];	
+				rdiag += a[-(i + 1)];	
 				a += size;
 			}
 		}
