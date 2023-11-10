@@ -23,6 +23,7 @@ void print_diagsums(int *a, int size)
 			ldiag += (*a * i) + i;
 			rdiag += ((*a * i) + i) - (i + 1);
 		}
+		j++;
 	}
 	printf("%d, %d\n", ldiag, rdiag);
 }
