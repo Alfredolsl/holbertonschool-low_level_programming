@@ -23,6 +23,7 @@ void print_diagsums(int *a, int size)
 			{
 				ldiag += a[i];
 				rdiag += ((*a * i) + i) - (i + 1);	
+				a += size;
 			}
 		}
 	}
