@@ -19,9 +19,9 @@ void print_diagsums(int *a, int size)
 	{
 		for (j = 0; j < size; j++)
 		{
-			if (i==j)
+			if (i == j)
 			{
-				ldiag += (i * *a) * size;
+				ldiag += *(*(size + i) + j);
 				rdiag += ((*a * i) + i) - (i + 1);	
 			}
 		}
