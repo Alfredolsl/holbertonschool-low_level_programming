@@ -20,8 +20,8 @@ void print_diagsums(int *a, int size)
 	{
 		if (i == j)
 		{
-			ldiag += (*a * size) + i;
-			rdiag += ((*a * size) + i) - (i + 1);
+			ldiag += (*a * i) + i;
+			rdiag += ((*a * i) + i) - (i + 1);
 		}
 	}
 	printf("%d, %d\n", ldiag, rdiag);
