@@ -21,7 +21,7 @@ void print_diagsums(int *a, int size)
 		{
 			if (i==j)
 			{
-				ldiag += (j * *a + i) * size;
+				ldiag += (i * *a) * size;
 				rdiag += ((*a * i) + i) - (i + 1);	
 			}
 		}
