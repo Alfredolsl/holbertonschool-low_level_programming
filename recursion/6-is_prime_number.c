@@ -8,6 +8,8 @@
  * else return 0
  */
 
+int _prime_number(int n, int guess);
+
 int is_prime_number(int n)
 {
 	if (n < 1)
