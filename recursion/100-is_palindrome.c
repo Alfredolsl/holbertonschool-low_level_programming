@@ -48,7 +48,7 @@ int check_palindrome(char *s, int index, int len)
 {
 	if (s[index] == s[len/2])
 		return (1);
-	else if (s[index] == s[len - index - 1])
+	else if (s[index] == s[-(index + 1)])
 		return check_palindrome(s, index + 1, len);
 	else
 		return (0);
