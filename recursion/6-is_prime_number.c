@@ -12,7 +12,7 @@ int _prime_number(int n, int guess);
 
 int is_prime_number(int n)
 {
-	if (n < 1)
+	if (n <= 1)
 		return (0);
 	else
 		return (_prime_number(n, 2));
