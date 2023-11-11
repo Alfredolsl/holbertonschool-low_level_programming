@@ -1,5 +1,8 @@
 #include "main.h"
 
+
+int _prime_number(int n, int div);
+
 /**
  * is_prime_number - function that determines if integer
  * is prime number or not.
@@ -7,8 +10,6 @@
  * Return: 1 if integer is a prime number,
  * else return 0
  */
-
-int _prime_number(int n, int div);
 
 int is_prime_number(int n)
 {
