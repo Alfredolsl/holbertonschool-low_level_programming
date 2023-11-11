@@ -1,13 +1,5 @@
 #include "main.h"
 
-/**
- * _sqrt - function that calculates square root of n
- * @n: natural number to be calculated
- * guess: test number
- * Return: guess if guess * guess is equal to n,
- * else call itself and incrementing guess by 1
- */
-
 int _sqrt(int n, int guess);
 
 /**
@@ -28,7 +20,7 @@ int _sqrt_recursion(int n)
 /**
  * _sqrt - function that calculates square root of n
  * @n: natural number to be calculated
- * guess: test number
+ * @guess: test number
  * Return: guess if guess * guess is equal to n,
  * else call itself and incrementing guess by 1
  */
