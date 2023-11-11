@@ -7,10 +7,8 @@
  * -1 if square root isn't a natural integer
  */
 
-int _sqrt_recursion(int n)
+int _sqrt_recursion(int n, int guess)
 {
-	int guess;
-
 	if (n < 0)
 		return (-1);
 	else if (guess * guess == n)
@@ -19,7 +17,6 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		guess += 1;
-		return (_sqrt_recursion(n));
+		return (_sqrt_recursion(n, guess + 1))
 	}
 }
