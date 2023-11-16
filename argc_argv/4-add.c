@@ -12,7 +12,7 @@ int _atoi(char *s);
 
 int main(int argc, char **argv)
 {
-	int i, j, k, sum;
+	int i, j, k, sum, num;
 
 	sum = 0;
 
@@ -29,9 +29,10 @@ int main(int argc, char **argv)
 		}
 	}
 	/* adds to var sum the iterated integers from array */
-	for (k = 1; k < size; k++)
+	for (k = 1; k < argc; k++)
 	{
-		if (argv[k] > 0)
+		num = argv[k]
+		if (num > 0)
 			sum += argv[k];
 	}
 
