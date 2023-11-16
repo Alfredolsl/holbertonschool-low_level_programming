@@ -18,11 +18,11 @@ int main(int argc, char **argv)
 	if (argc != 2)
 	{
 		puts("Error");
-		return(1);
+		return (1);
 	}
 
 	num = _atoi(argv[1]);
-        cents = 0;
+	cents = 0;
 
 	if (num < 0)
 	{
