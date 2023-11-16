@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 	/* adds to var sum the iterated integers from array */
 	for (k = 1; k < argc; k++)
 	{
-		num = argv[k]
+		num = _atoi(argv[k]);
 		if (num > 0)
 			sum += argv[k];
 	}
