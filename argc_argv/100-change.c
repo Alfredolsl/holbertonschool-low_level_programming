@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 			num -= coins[j];
 		}
 	}
-	printf("%d\n", cents)
+	printf("%d\n", cents);
 
 	return (0);
 }
