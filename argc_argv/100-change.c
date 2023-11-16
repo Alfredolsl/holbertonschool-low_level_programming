@@ -26,12 +26,12 @@ int main(int argc, char **argv)
 
 	if (num < 0)
 	{
-		_printf("0\n");
+		printf("0\n");
 		return (0);
 	}
 
 	/* for loop to iterate coin array to determine number of cents */
-	for (j = 0; j < 5 && n >= 0; j++)
+	for (j = 0; j < 5 && num >= 0; j++)
 	{
 		while (num >= coins[j])
 		{
