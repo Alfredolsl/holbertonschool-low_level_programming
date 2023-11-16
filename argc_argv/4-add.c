@@ -33,10 +33,10 @@ int main(int argc, char **argv)
 	{
 		num = _atoi(argv[k]);
 		if (num > 0)
-			sum += argv[k];
+			sum += num;
 	}
 
-	printf("%d\n", puts);
+	printf("%d\n", sum);
 
 	return (0);
 }
