@@ -8,10 +8,10 @@
  * Return: 0 if successful
  */
 
-int main (int argc, char **argv)
+int main(int argc, char **argv)
 {
 	while (--argc)
-		printf("%s", argv[argc]);
+		printf("%s\n", argv[argc]);
 
 	putchar('\n');
 
