@@ -12,10 +12,6 @@ int _atoi(char *s);
 
 int main(int argc, char **argv)
 {
-	int i, j;
-
-	int j = 0;
-
 	if (argc == 1)
 	{
 		printf("0\n");
@@ -23,9 +19,13 @@ int main(int argc, char **argv)
 	}
 	else
 	{
+		int i, sum;
+
+		sum = 0;
 
 		for (i = 1; i < argc; i++)
 		{
+
 			if (!(argv[i] > 'a' && argv[i] < 'z') || !(argv[i] > 'A' && argv[i] < 'Z'))
 			{
 				printf("Error\n");
@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 			}
 			else
 			{
-				j += _atoi(i);
+				sum += _atoi(argv[i]);
 			}
 		}
 		printf("%d\n", j);
