@@ -13,8 +13,11 @@ int main(int argc, char **argv)
 	if (argc < 2)
 		puts("Error");
 	else
-		printf("%d", (argv[1] - '0') * (argv[2] - '0'));
-
+	{
+		n1 = argv[1] - '0';
+		n2 = argv[2] - '0';
+		printf("%d", n1 * n2);
+	}
 	putchar('\n');
 
 	return (0);
