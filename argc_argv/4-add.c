@@ -12,31 +12,30 @@ int _atoi(char *s);
 
 int main(int argc, char **argv)
 {
-	if (argc == 1)
-	{
-		printf("0\n");
-		return (1);
-	}
-	else
-	{
-		int i, sum;
+	int i, j, k, sum;
 
-		sum = 0;
+	sum = 0;
 
-		for (i = 1; i < argc; i++)
+	/* iterating through each char of item in array */
+	for (i = 1; i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-
-			if (!(argv[i] > 'a' && argv[i] < 'z') || !(argv[i] > 'A' && argv[i] < 'Z'))
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
-				printf("Error\n");
+				puts("Error");
 				return (1);
 			}
-			else
-			{
-				sum += _atoi(argv[i]);
-			}
 		}
-		printf("%d\n", j);
 	}
+	/* adds to var sum the iterated integers from array */
+	for (k = 1; k < size; k++)
+	{
+		if (argv[k] > 0)
+			sum += argv[k];
+	}
+
+	printf("%d\n", puts);
+
 	return (0);
 }
