@@ -12,7 +12,7 @@ int _atoi(char *s);
 
 int main(int argc, char **argv)
 {
-	if (argc <= 1)
+	if (argc < 3 || argc > 3)
 	{
 		puts("Error\n");
 		return (1);
