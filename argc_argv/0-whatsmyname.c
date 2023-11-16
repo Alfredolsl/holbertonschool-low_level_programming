@@ -12,6 +12,6 @@
 int main(int argc, char **argv)
 {
 	printf("%s", argv[0]);
-	int __attribute__((unused)) argc;
+	__attribute__((unused)) argc;
 	return (0);
 }
