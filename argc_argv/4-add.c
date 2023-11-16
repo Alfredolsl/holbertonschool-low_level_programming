@@ -12,6 +12,10 @@ int _atoi(char *s);
 
 int main(int argc, char **argv)
 {
+	int i, j;
+
+	int j = 0;
+
 	if (argc == 1)
 	{
 		printf("0\n");
@@ -19,12 +23,10 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		int i;
-		int j = 0;
 
 		for (i = 1; i < argc; i++)
 		{
-			if !((argv[i] > 'a' && argv[i] < 'z') || (argv[i] > 'A' && argv[i] < 'Z'))
+			if (!(argv[i] > 'a' && argv[i] < 'z') || !(argv[i] > 'A' && argv[i] < 'Z'))
 			{
 				printf("Error\n");
 				return (1);
