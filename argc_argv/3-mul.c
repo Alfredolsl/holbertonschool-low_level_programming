@@ -8,13 +8,13 @@
  * Return: 0 if successful
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv)
 {
 	if (argc < 2)
 		puts("Error");
 	else
 	{
-		int n1, n2;
+		long int n1, n2;
 
 		n1 = argv[1] - '0';
 		n2 = argv[2] - '0';
