@@ -13,7 +13,10 @@ int _atoi(char *s);
 int main(int argc, char **argv)
 {
 	if (argc <= 1)
-		puts("Error");
+	{
+		puts("Error\n");
+		return (1);
+	}
 	else
 	{
 		int n1, n2;
