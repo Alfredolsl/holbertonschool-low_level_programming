@@ -38,12 +38,12 @@ char *str_concat(char *s1, char *s2)
 	if (s3 == NULL)
 		return (NULL);
 
-	for (concat = 0; concat < x; concat++)
+	for (concat = 0; concat < i; concat++)
 	{
 		s3[concat] = s1[concat];
 	}
 
-	for (concat = 0; concat < y; concat++)
+	for (concat = 0; concat < j; concat++)
 	{
 		s3[concat + i] = s2[concat];
 	}
