@@ -29,9 +29,11 @@ char *_strdup(char *str)
 	if (s == NULL)
 		return (NULL);
 
-	for (i = 0; str[i] != '\0'; ++i)
+	i = 0;
+	while (*(str + i))
 	{
 		*(s + i) = *(str + i);
+		++x;
 	}
 	*(s + i) = '\0';
 
