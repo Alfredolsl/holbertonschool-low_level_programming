@@ -33,7 +33,7 @@ char *_strdup(char *str)
 	while (*(str + i))
 	{
 		*(s + i) = *(str + i);
-		++x;
+		++i;
 	}
 	*(s + i) = '\0';
 
