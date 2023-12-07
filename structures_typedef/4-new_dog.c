@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -24,7 +25,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	newDog->name = strdup(name);
 	newDog->owner = strdup(owner);
-	newDog->age = strdup(age);
+	newDog->age = age;
 
 	return (newDog);
 }
