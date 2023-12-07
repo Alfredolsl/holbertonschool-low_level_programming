@@ -1,5 +1,10 @@
+#ifndef stdlib_h
+#define stdlib_h
+
 #include <stdlib.h>
-#include <stdio.h>
+
+#endif
+
 #ifndef DOG_H
 #define DOG_H
 
