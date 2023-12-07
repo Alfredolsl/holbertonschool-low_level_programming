@@ -2,16 +2,29 @@
 #include "dog.h"
 
 /**
- * main - checks code for dog_t in dog.h
+ * new_dog - new constructor
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog owner's name
  *
- * Return: 0 if successful
+ * Return: none
  */
 
-int main(void)
+dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *my_dog;
+	dog_t *newDog;
 
-	my_dog = new_dog("Poppy", 3.5, "Bob");
-	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
-	return (0);
+	if (name == NULL || owner == NULL)
+		return(NULL);
+
+	newDog = malloc(sizeof(dog_t));
+
+	if (newDog == NULL)
+		return (NULL);
+
+	newDog->name = strdup(name);
+	newDog->owner = strdup(owner);
+	newDog->age = strdup(age);
+
+	return (newDog);
 }
