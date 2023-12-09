@@ -13,6 +13,6 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	if (array != NULL && action != NULL)
 	{
-		(*action)(array)(size);
+		(*action)(array, size);
 	}
 }
