@@ -5,7 +5,6 @@
 /**
  * get_op_func - Selects the function to make the operation
  * @s: The operator passed as argument to the program
- * 
  * Return: A pointer to the function with the
  * selected operation
  */
