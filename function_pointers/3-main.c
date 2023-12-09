@@ -10,7 +10,7 @@
  * Return: 0 if successful
  */
 
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int num1, num2, result;
 	int (*op_func)(int, int);
