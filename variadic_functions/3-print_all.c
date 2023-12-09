@@ -28,13 +28,13 @@ void print_all(const char * const format, ...)
 				printf("%s%d", separator, va_arg(args, int));
 				break;
 			case 'f':
-				printf("%s%d", separator, va_arg(args, double));
+				printf("%s%f", separator, va_arg(args, double));
 				break;
 			case 's':
 				str = va_arg(args, char *);
 				if (str == NULL)
 					str = "(nil)";
-				printf("%s%s", separator va_arg(args, str));
+				printf("%s%s", separator, str);
 				break;
 		}
 		separator = ", ";
