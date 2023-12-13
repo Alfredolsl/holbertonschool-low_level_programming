@@ -12,7 +12,7 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t count;
+	size_t counter;
 
 	counter = 0;
 
@@ -27,5 +27,5 @@ size_t print_list(const list_t *h)
 		counter++;
 	}
 
-	return(counter);
+	return (counter);
 }
