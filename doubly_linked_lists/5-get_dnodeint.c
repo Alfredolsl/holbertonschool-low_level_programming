@@ -8,7 +8,7 @@
  * @head: first node of dlistint_t
  * @index: requested index element
  *
- * Return: address of node
+ * Return: address of node, NULL if out of range
  */
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
