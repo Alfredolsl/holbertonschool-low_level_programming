@@ -11,7 +11,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int result = 0;
-	int power;
+	int power = 0;
 
 	while (*b) /* true if current char is not '\0' */
 	{
