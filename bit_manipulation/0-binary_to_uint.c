@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 
 		result += (*b - '0') * power;
-		power *= 2;
+		power = power * 2;
 		b++;
 	}
 
