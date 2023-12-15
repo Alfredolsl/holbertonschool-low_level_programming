@@ -1,6 +1,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * create_file - creates a file
