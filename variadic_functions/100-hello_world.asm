@@ -1,10 +1,16 @@
-global	main
-	extern printf
+section .text
+	global start:
 
-main:
-	mov edi, format
-	xor eax, eax
-	call printf
-	mov eax, 0
-	ret
-format: db 'Hello, World\n', 0
+start:
+	mov edx, len
+	mov ecx, msg
+	mov ebx, 1
+	mov eax, 4     ;system call (sys write)
+	int 0x80       ;to call kernnel
+
+	mov eax, 1     ;system call (sys_exit)
+	int 0x080
+
+section .data
+	msg db "Hello, World", 10
+	len equ $ -msg
