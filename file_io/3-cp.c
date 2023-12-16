@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	fd_to = open_file(file_to, O_WRONLY | O_CREAT | O_TRUNC,
 			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 
-	bytes_read = read(fr_from, bugger, BUFFER_SIZE);
+	bytes_read = read(fd_from, buffer, BUFFER_SIZE);
 
 	if (bytes_read == -1)
 	{
