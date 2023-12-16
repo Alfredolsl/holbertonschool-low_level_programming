@@ -1,7 +1,7 @@
 section .text
-	global start:
+	global _start:
 
-start:
+_start:
 	mov edx, len
 	mov ecx, msg
 	mov ebx, 1
@@ -12,5 +12,5 @@ start:
 	int 0x080
 
 section .data
-	msg db "Hello, World", 10
+	msg db "Hello, World", 0xa ; also 10
 	len equ $ -msg
