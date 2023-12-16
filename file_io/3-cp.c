@@ -37,9 +37,9 @@ int main(int argc, char *argv[])
 	fd_from = open(file_from, O_RDONLY);
 	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
-	while ((bytes_read = read(file_to, buffer, BUFFER_SIZE) > 0))
+	while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE) > 0))
 	{
-		bytes_written = write(file_to, buffer, BUFFER_SIZE);
+		bytes_written = write(fd_to, buffer, BUFFER_SIZE);
 		if (bytes_written == -1)
 		{
 			close_file(file_from, fd_from);
