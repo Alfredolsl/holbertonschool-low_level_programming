@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	}
 
 	fd_from = open_file(file_from, O_RDONLY, 0);
-	fd_to = open_file(file_to, O_WRONLY | O_CREAT | O_TRUNC, 
+	fd_to = open_file(file_to, O_WRONLY | O_CREAT | O_TRUNC,
 			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 
 	while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 		{
 			close_file(file_from, fd_from);
 			close_file(file_to, fd_to);
-			print_error_and_exit(99, "Error: Can't write to %s\n", file_to);
+			print_error_and_exit(99, "Error: Can't write to file %s\n", file_to);
 		}
 	}
 
