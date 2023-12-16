@@ -14,7 +14,7 @@ void close_file(const char *filename, int fd);
 
 /**
  * main - main function for copying one file to another
- * @argc: argument countn
+ * @argc: argument count
  * @argv: argument vector
  *
  * Return: 0 if successful, otherwise exit with error code
@@ -71,7 +71,7 @@ void print_error_and_exit(int error_code, const char *message, ...)
 	va_list args;
 
 	va_start(args, message);
-	dprintf(STDERR_FILENO, message, args);
+	dprintf(STDERR_FILENO, message, va_arg(args, char *));
 	va_end(args);
 
 	exit(error_code);
