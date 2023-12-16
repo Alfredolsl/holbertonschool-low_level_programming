@@ -92,7 +92,7 @@ int open_file(const char *filename, int flags, mode_t mode)
 	int fd = open(filename, flags, mode);
 
 	if (fd == -1)
-		print_error_and_exit(99, "Error: Can't write to %s\n", filename);
+		print_error_and_exit(98, "Error: Can't read from %s\n", filename);
 
 	return (fd);
 }
