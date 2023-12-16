@@ -34,12 +34,12 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
-	fd_from = open(file_from, O_RDONLY);
-	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	fd_from = open_file(file_from, O_RDONLY, 0);
+	fd_to = open_file(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
 	while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE) > 0))
 	{
-		bytes_written = write(fd_to, buffer, BUFFER_SIZE);
+		bytes_written = write(fd_to, buffer, bytes_read);
 		if (bytes_written == -1)
 		{
 			close_file(file_from, fd_from);
