@@ -92,7 +92,7 @@ int open_file(const char *filename, int flags, mode_t mode)
 {
 	int fd = open(filename, flags, mode);
 
-	if (filename == "")
+	if (strcmp(filename, "") == 0)
 		print_error_and_exit(99, "Error: Can't write to %s\n", filename);
 
 	if (fd == -1 && access(filename, R_OK) == 0)
