@@ -74,7 +74,7 @@ void print_error_and_exit(int error_code, const char *message, ...)
 	dprintf(STDERR_FILENO, message, args);
 	va_end(args);
 
-	exit(code);
+	exit(error_code);
 }
 
 /**
