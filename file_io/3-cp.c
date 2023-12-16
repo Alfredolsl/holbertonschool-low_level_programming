@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
+
 	fd_from = open_file(file_from, O_RDONLY, 0);
 	fd_to = open_file(file_to, O_WRONLY | O_CREAT | O_TRUNC,
 			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
@@ -91,7 +92,7 @@ int open_file(const char *filename, int flags, mode_t mode)
 {
 	int fd = open(filename, flags, mode);
 
-	if (fd == -1 && access(filename, R_OK) == 0)
+	if (fd == -1 && access(filename, R_OK) == 0 && (argv[1] == "" || argv[2] == ""))
 		print_error_and_exit(99, "Error: Can't write to %s\n", filename);
 	else if (fd == -1)
 		print_error_and_exit(98, "Error: Can't read from file %s\n", filename);
