@@ -104,6 +104,6 @@ int open_file(const char *filename, int flags, mode_t mode)
 
 void close_file(const char *filename, int fd)
 {
-	if (fd == -1)
+	if (close(fd) == -1)
 		print_error_and_exit(100, "Error: Can't close fd for file %s\n", filename);
 }
