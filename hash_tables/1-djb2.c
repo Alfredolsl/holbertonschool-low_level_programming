@@ -15,8 +15,8 @@ unsigned long int hash_djb2(const unsigned char *str)
 	int c;
 
 	hash = 5381;
-	/* Why this number? In testing, this number resulted in fewer collisions
-	 * and better avalanching. */
+	/* Why this number? In testing, this number resulted in fewer collisions */
+	/* and better avalanching. */
 
 	while ((c = *str++))
 		hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
