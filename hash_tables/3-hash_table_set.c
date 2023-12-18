@@ -17,12 +17,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned int index, i;
 	hash_table_t *new_node;
 
-	if (ht == NULL || key == NULL || value == '\0' || value == NULL)
+	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
 
-	for (i = 0; ht->array[i]; i++)
+	for (i = index; ht->array[i]; i++)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
 		{
