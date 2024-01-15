@@ -10,6 +10,7 @@
 void print_arr_range(int *array, int range1, int range2)
 {
 	int i;
+
 	printf("Searching in array: ");
 
 	for (i = range1; i <= range2; i++)
